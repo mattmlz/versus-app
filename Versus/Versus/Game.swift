@@ -17,7 +17,8 @@ class Game : NSObject{
     var type : String = ""
     
     init(nom: String,type: String){
-        self.nom = nomself.type = type
+        self.nom = nom
+        self.type = type
     }
     
 }

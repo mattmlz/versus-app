@@ -13,15 +13,16 @@ class Match : NSObject{
     *  rang : Le rang du match (8 = huitieme de finale etc...)
      * aEteJoue : Si le match est terminé
     */
-    //var gagnant : Team
+    var gagnant : Team!
     var rang : integer_t = 0
     var aEteJoue : Bool = false
     
-    init(rang: integer_t){
+    init(_ rang: integer_t){
         self.rang = rang
     }
     
-    func jouerMatch(gagnant: Team){
+    func jouerMatch(_ gagnant: Team) -> Void{
+        self.gagnant = gagnant
         self.aEteJoue = true
     }
     

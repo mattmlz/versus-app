@@ -13,12 +13,12 @@ class Tournament : NSObject{
     var nom : String = ""
     var gagnants : [Player] = []
     
-    init(gains: [integer_t], nom: String){
+    init(_ gains: [integer_t],_ nom: String){
         self.gains = gains
         self.nom = nom
     }
     
-    func ajouterGagants(gagnants: [Player]) -> Void {
+    func ajouterGagants(_ gagnants: [Player]) -> Void {
         self.gagnants = gagnants
     }
     
