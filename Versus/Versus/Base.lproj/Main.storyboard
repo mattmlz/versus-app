@@ -18,32 +18,44 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Versus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Versus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Versus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nf-A3-P4w">
-                                <rect key="frame" x="66" y="362" width="243" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nf-A3-P4w">
+                                <rect key="frame" x="79" y="343.5" width="217.5" height="98.5"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="69"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWv-FZ-Eit">
-                                <rect key="frame" x="81" y="490" width="213" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-eo-RIH">
+                                <rect key="frame" x="68" y="87.5" width="239" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246" id="BIb-xe-AsP"/>
+                                    <constraint firstAttribute="width" constant="239" id="r5f-Xv-HDN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWv-FZ-Eit">
+                                <rect key="frame" x="89.5" y="542" width="196" height="64"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="36"/>
                                 <state key="normal" title="Let's Begin">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clickLetsbegin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EhR-YG-v45"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5jU-eo-RIH">
-                                <rect key="frame" x="87" y="153" width="200" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.88172743055555558" green="0.25754906232224234" blue="0.17396375868055555" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5jU-eo-RIH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-123" id="9I9-oM-ynD"/>
+                            <constraint firstItem="gWv-FZ-Eit" firstAttribute="top" secondItem="8Nf-A3-P4w" secondAttribute="bottom" constant="100" id="Dlc-Vz-Wj8"/>
+                            <constraint firstItem="gWv-FZ-Eit" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L8M-1G-Y8e"/>
+                            <constraint firstItem="8Nf-A3-P4w" firstAttribute="top" secondItem="5jU-eo-RIH" secondAttribute="bottom" constant="10" id="MMN-ME-2P0"/>
+                            <constraint firstItem="5jU-eo-RIH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="amX-ub-T96"/>
+                            <constraint firstItem="8Nf-A3-P4w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mvB-Nd-kmq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -54,8 +66,93 @@
             </objects>
             <point key="canvasLocation" x="132" y="130.88455772113943"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="l9i-yn-nqD">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="PXQ-hx-KGN" customClass="HomeViewController" customModule="Versus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="09b-TS-rxo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t49-K3-f1W">
+                                <rect key="frame" x="0.0" y="64" width="375" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New tournament" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-pK-Ygx">
+                                        <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                        <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88172743060000003" green="0.25754906230000002" blue="0.1739637587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6Sm-68-ua8"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFB-pK-Ygx" secondAttribute="trailing" constant="8" id="FGk-NF-aed"/>
+                                    <constraint firstAttribute="bottom" secondItem="RFB-pK-Ygx" secondAttribute="bottom" constant="8" id="Gw0-Xw-VAD"/>
+                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="top" secondItem="t49-K3-f1W" secondAttribute="top" constant="8" id="IAU-MQ-SVd"/>
+                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="leading" secondItem="t49-K3-f1W" secondAttribute="leading" constant="8" id="woN-mM-nrN"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tournament's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-fZ-6Gm">
+                                <rect key="frame" x="27" y="182" width="189" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZo-2o-aHF">
+                                <rect key="frame" x="93" y="587" width="189" height="43"/>
+                                <color key="backgroundColor" red="0.043137254901960784" green="0.63137254901960782" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="30"/>
+                                <state key="normal" title="Let's rumble">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <string key="backgroundImage" base64-UTF8="YES">
+CQ
+</string>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t49-K3-f1W" firstAttribute="top" secondItem="QrN-cG-Ghs" secondAttribute="top" id="KMc-TB-CvL"/>
+                            <constraint firstItem="QrN-cG-Ghs" firstAttribute="bottom" secondItem="YZo-2o-aHF" secondAttribute="bottom" constant="37" id="T4V-fU-ARy"/>
+                            <constraint firstItem="t49-K3-f1W" firstAttribute="trailing" secondItem="QrN-cG-Ghs" secondAttribute="trailing" id="bET-CT-PbI"/>
+                            <constraint firstItem="YZo-2o-aHF" firstAttribute="centerX" secondItem="09b-TS-rxo" secondAttribute="centerX" id="dgC-O7-j5Z"/>
+                            <constraint firstItem="t49-K3-f1W" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" id="xAC-ML-KQY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QrN-cG-Ghs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="591-Db-K8I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuc-gG-mao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.5999999999999" y="130.88455772113943"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4VW-v4-g11">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" id="GoY-D4-5v8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xm4-Os-BkI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PXQ-hx-KGN" kind="relationship" relationship="rootViewController" id="IgB-A4-OPt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adJ-gA-HRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="821"/>
+        </scene>
     </scenes>
     <resources>
+        <image width="16" height="16">
+            <string key="name" base64-UTF8="YES">
+CQ
+</string>
+        </image>
         <image name="Logo" width="579" height="592"/>
     </resources>
 </document>

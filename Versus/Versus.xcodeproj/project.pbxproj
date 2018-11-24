@@ -12,6 +12,7 @@
 		55425D6F21A829A300D0D77B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D6E21A829A300D0D77B /* Match.swift */; };
 		55425D7121A82BF700D0D77B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D7021A82BF700D0D77B /* Team.swift */; };
 		55425D7321A832C800D0D77B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D7221A832C800D0D77B /* Game.swift */; };
+		5550CD4A21A9A4E300DF5CFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */; };
 		55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */; };
 		DB77155421A7EE1300123D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155321A7EE1300123D82 /* AppDelegate.swift */; };
 		DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155521A7EE1300123D82 /* LoginViewController.swift */; };
@@ -45,6 +46,7 @@
 		55425D6E21A829A300D0D77B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		55425D7021A82BF700D0D77B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		55425D7221A832C800D0D77B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PermanentMarker.ttf; path = "../../../../../../Downloads/permanent-marker/PermanentMarker.ttf"; sourceTree = "<group>"; };
 		DB77155021A7EE1300123D82 /* Versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77155321A7EE1300123D82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				55BE6E0721A8825E00F7D5C1 /* fonts */,
 				DB77155321A7EE1300123D82 /* AppDelegate.swift */,
 				DB77155521A7EE1300123D82 /* LoginViewController.swift */,
+				5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */,
 				DB77155721A7EE1300123D82 /* Main.storyboard */,
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
@@ -286,6 +289,7 @@
 				55425D6D21A827FF00D0D77B /* Tournament.swift in Sources */,
 				DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */,
 				55425D7321A832C800D0D77B /* Game.swift in Sources */,
+				5550CD4A21A9A4E300DF5CFE /* HomeViewController.swift in Sources */,
 				55425D7121A82BF700D0D77B /* Team.swift in Sources */,
 				55425D6B21A8257700D0D77B /* Player.swift in Sources */,
 				55425D6F21A829A300D0D77B /* Match.swift in Sources */,

@@ -19,10 +19,19 @@ class LoginViewController: UIViewController {
         
         self.view.backgroundColor = redBackground
         
-        letsBegin.layer.borderWidth = 1
+        letsBegin.layer.borderWidth = 2
+        letsBegin.layer.cornerRadius = 5
         letsBegin.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    @IBAction func clickLetsbegin(_ sender: Any) {
         
+        //afficher la home
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+        let homeViewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
+        
+        present(homeViewController, animated: true, completion: nil)
     }
 
 
