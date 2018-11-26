@@ -14,5 +14,10 @@ class Team : NSObject{
     
     init(nom: String){
         self.nom = nom
-    }    
+    }
+    
+    func aGagne(){
+        
+    }
+    
 }

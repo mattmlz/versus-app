@@ -18,16 +18,22 @@ class Match : NSObject{
     var gagnant : Team!
     var matchPrecedent : Match!
     var matchSuivant : Match!
+    var tournoi : Tournament!
     var rang : integer_t = 0
     var aEteJoue : Bool = false
     
-    init(_ rang: integer_t){
+    // Constructeur de base
+    init(_ rang: integer_t, tournoi: Tournament){
         self.rang = rang
+        self.tournoi = tournoi
     }
     
     func jouerMatch(_ gagnant: Team) -> Void{
         self.gagnant = gagnant
         self.aEteJoue = true
+        
+        // On ajoute 1 point aux membres de la team
+
     }
     
 }

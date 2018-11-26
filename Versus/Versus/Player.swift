@@ -10,7 +10,8 @@ import UIKit
 
 class Player : NSObject{
     var pseudo : String = ""
-    var gainsActuels : integer_t = 0
+    var pointsTournament : integer_t = 0
+    var totalPoints : integer_t = 0
     
     init(pseudo: String){
         self.pseudo = pseudo

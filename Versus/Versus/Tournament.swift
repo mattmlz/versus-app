@@ -9,6 +9,7 @@
 import UIKit
 
 class Tournament : NSObject{
+    var joueurs : [Player] = []
     var gains : [integer_t] = []
     var nom : String = ""
     var gagnants : [Player] = []

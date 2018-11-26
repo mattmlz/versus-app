@@ -10,11 +10,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var labelTournament: UILabel!
+    @IBOutlet weak var textFieldTournament: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+    }
+    
+    func newTournament(){
         
     }
     

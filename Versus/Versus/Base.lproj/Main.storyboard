@@ -74,11 +74,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t49-K3-f1W">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t49-K3-f1W" userLabel="Fond Rouge">
                                 <rect key="frame" x="0.0" y="64" width="375" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New tournament" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-pK-Ygx">
-                                        <rect key="frame" x="8" y="8" width="359" height="64"/>
+                                        <rect key="frame" x="25" y="10" width="325" height="60"/>
                                         <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -86,43 +86,62 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.88172743060000003" green="0.25754906230000002" blue="0.1739637587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="6Sm-68-ua8"/>
-                                    <constraint firstAttribute="trailing" secondItem="RFB-pK-Ygx" secondAttribute="trailing" constant="8" id="FGk-NF-aed"/>
-                                    <constraint firstAttribute="bottom" secondItem="RFB-pK-Ygx" secondAttribute="bottom" constant="8" id="Gw0-Xw-VAD"/>
-                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="top" secondItem="t49-K3-f1W" secondAttribute="top" constant="8" id="IAU-MQ-SVd"/>
-                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="leading" secondItem="t49-K3-f1W" secondAttribute="leading" constant="8" id="woN-mM-nrN"/>
+                                    <constraint firstAttribute="bottom" secondItem="RFB-pK-Ygx" secondAttribute="bottom" constant="10" id="K3J-In-bLc"/>
+                                    <constraint firstAttribute="width" secondItem="t49-K3-f1W" secondAttribute="height" multiplier="75:16" id="Rho-tC-4MT"/>
+                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="leading" secondItem="t49-K3-f1W" secondAttribute="leading" constant="25" id="gj8-NH-qGs"/>
+                                    <constraint firstAttribute="trailing" secondItem="RFB-pK-Ygx" secondAttribute="trailing" constant="25" id="p4f-Da-GJB"/>
+                                    <constraint firstItem="RFB-pK-Ygx" firstAttribute="top" secondItem="t49-K3-f1W" secondAttribute="top" constant="10" id="qHz-mv-gKX"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tournament's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-fZ-6Gm">
-                                <rect key="frame" x="27" y="182" width="189" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tournament's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-fZ-6Gm">
+                                <rect key="frame" x="30" y="174" width="215" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lVw-fZ-6Gm" secondAttribute="height" multiplier="189:29" id="R6Q-Hm-grO"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZo-2o-aHF">
-                                <rect key="frame" x="93" y="587" width="189" height="43"/>
+                                <rect key="frame" x="93" y="562" width="189" height="55"/>
                                 <color key="backgroundColor" red="0.043137254901960784" green="0.63137254901960782" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="30"/>
                                 <state key="normal" title="Let's rumble">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <string key="backgroundImage" base64-UTF8="YES">
-CQ
-</string>
                                 </state>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" placeholder="My tournament" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfp-dx-4Jy">
+                                <rect key="frame" x="30" y="207" width="102.5" height="17"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="lVw-fZ-6Gm" firstAttribute="width" secondItem="yfp-dx-4Jy" secondAttribute="width" id="6Jh-0r-b4V"/>
+                                    <constraint firstItem="lVw-fZ-6Gm" firstAttribute="height" secondItem="yfp-dx-4Jy" secondAttribute="height" id="jEN-kJ-01M"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94376586294416243" green="0.94376586294416243" blue="0.94376586294416243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t49-K3-f1W" firstAttribute="top" secondItem="QrN-cG-Ghs" secondAttribute="top" id="KMc-TB-CvL"/>
-                            <constraint firstItem="QrN-cG-Ghs" firstAttribute="bottom" secondItem="YZo-2o-aHF" secondAttribute="bottom" constant="37" id="T4V-fU-ARy"/>
-                            <constraint firstItem="t49-K3-f1W" firstAttribute="trailing" secondItem="QrN-cG-Ghs" secondAttribute="trailing" id="bET-CT-PbI"/>
-                            <constraint firstItem="YZo-2o-aHF" firstAttribute="centerX" secondItem="09b-TS-rxo" secondAttribute="centerX" id="dgC-O7-j5Z"/>
-                            <constraint firstItem="t49-K3-f1W" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" id="xAC-ML-KQY"/>
+                            <constraint firstItem="QrN-cG-Ghs" firstAttribute="trailing" secondItem="t49-K3-f1W" secondAttribute="trailing" id="5If-Cc-TJD"/>
+                            <constraint firstItem="yfp-dx-4Jy" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" constant="30" id="SRh-ry-Ow4"/>
+                            <constraint firstItem="QrN-cG-Ghs" firstAttribute="bottom" secondItem="YZo-2o-aHF" secondAttribute="bottom" constant="50" id="Tmq-3X-aYz"/>
+                            <constraint firstItem="lVw-fZ-6Gm" firstAttribute="top" secondItem="t49-K3-f1W" secondAttribute="bottom" constant="30" id="UNb-Dd-sXL"/>
+                            <constraint firstItem="t49-K3-f1W" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" id="WMq-bS-Jwf"/>
+                            <constraint firstItem="yfp-dx-4Jy" firstAttribute="top" secondItem="lVw-fZ-6Gm" secondAttribute="bottom" id="Y61-Xh-NgP"/>
+                            <constraint firstItem="lVw-fZ-6Gm" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" constant="30" id="ego-IN-fcH"/>
+                            <constraint firstItem="YZo-2o-aHF" firstAttribute="centerX" secondItem="09b-TS-rxo" secondAttribute="centerX" id="iyE-sg-xPg"/>
+                            <constraint firstItem="t49-K3-f1W" firstAttribute="top" secondItem="QrN-cG-Ghs" secondAttribute="top" id="p2a-si-3D1"/>
+                            <constraint firstItem="lVw-fZ-6Gm" firstAttribute="centerX" secondItem="09b-TS-rxo" secondAttribute="centerX" constant="-50" id="u4R-Gl-nUW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QrN-cG-Ghs"/>
                     </view>
                     <navigationItem key="navigationItem" id="591-Db-K8I"/>
+                    <connections>
+                        <outlet property="labelTournament" destination="lVw-fZ-6Gm" id="7UY-A5-GPB"/>
+                        <outlet property="textFieldTournament" destination="yfp-dx-4Jy" id="S7T-mS-dNw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuc-gG-mao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,11 +167,6 @@ CQ
         </scene>
     </scenes>
     <resources>
-        <image width="16" height="16">
-            <string key="name" base64-UTF8="YES">
-CQ
-</string>
-        </image>
         <image name="Logo" width="579" height="592"/>
     </resources>
 </document>
