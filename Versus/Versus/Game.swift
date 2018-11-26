@@ -13,11 +13,12 @@ class Game : NSObject{
      *  type : Le type de jeu
      *
      */
-    var nom : String = ""
+    var name : String = ""
     var type : String = ""
     
-    init(nom: String,type: String){
-        self.nom = nom
+    init(name: String,type: String){
+        super.init()
+        self.name = name
         self.type = type
     }
     

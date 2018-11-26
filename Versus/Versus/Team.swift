@@ -9,14 +9,15 @@
 import UIKit
 
 class Team : NSObject{
-    var nom: String = ""
-    var joueurs: [Player] = []
+    var name: String = ""
+    var players: [Player] = []
     
-    init(nom: String){
-        self.nom = nom
+    init(name: String){
+        super.init()
+        self.name = name
     }
     
-    func aGagne(){
+    func win(){
         
     }
     

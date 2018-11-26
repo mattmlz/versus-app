@@ -9,31 +9,73 @@
 import UIKit
 
 class Match : NSObject{
-    /* gagnant : L'equipe gagnante
-    *  rang : Le rang du match (1 = premier round etc...)
-    * aEteJoue : Si le match est terminé
-     * matchPrecedent : Le match precedent
-     * matchSuivant : Le match suivant
+    /* winner : The winning team
+    *  rank : The match rank (1 = first round etc...)
+    * played : If the match was already played
+     * previousMatch : The previous match in the bracket
+     * nextMatch : The next match in the bracket
+     * tournament : The tournament's id
     */
-    var gagnant : Team!
-    var matchPrecedent : Match!
-    var matchSuivant : Match!
-    var tournoi : Tournament!
-    var rang : integer_t = 0
-    var aEteJoue : Bool = false
+    var winner : Player!
+    var nextMatch : Match?
+    var tournament : Tournament!
+    var rank : Int = 0
+    var playerOne : Player!
+    var playerTwo : Player!
+    var played : Bool = false
     
-    // Constructeur de base
-    init(_ rang: integer_t, tournoi: Tournament){
-        self.rang = rang
-        self.tournoi = tournoi
+    // Basic constructor
+    init(rank: Int, tournament: Tournament){
+        super.init()
+        self.rank = rank
+        self.tournament = tournament
     }
     
-    func jouerMatch(_ gagnant: Team) -> Void{
-        self.gagnant = gagnant
-        self.aEteJoue = true
+    // Constructor with the two players
+    init(rank: Int, tournament: Tournament, playerOne: Player, playerTwo : Player){
+        super.init()
+        self.rank = rank
+        self.tournament = tournament
+        self.playerOne = playerOne
+        self.playerTwo = playerTwo
+    }
+    
+    // Constructor with the next match
+    init(rank: Int, tournament: Tournament, nextMatch: Match){
+        super.init()
+        self.rank = rank
+        self.tournament = tournament
+        self.nextMatch = nextMatch
+    }
+    
+    // Constructor with the next match and the two players
+    init(rank: Int, tournament: Tournament, nextMatch : Match, playerOne: Player, playerTwo : Player){
+        super.init()
+        self.rank = rank
+        self.tournament = tournament
+        self.nextMatch = nextMatch
+        self.playerOne = playerOne
+        self.playerTwo = playerTwo
+    }
+    
+    func playMatch(_ winner: Player){
+        self.winner = winner
+        self.played = true
         
-        // On ajoute 1 point aux membres de la team
-
+        // Add one point to the winner
+        winner.winAMatch(tournament)
+        
+        // If there's a next match, the tournament keep going
+        if((self.nextMatch) != nil){
+            self.nextMatch!.addPlayer(winner)
+        }else{
+        // If not, it was the final match
+            self.tournament.addWinner(winner)
+        }
+    }
+    
+    func addPlayer(_ player: Player){
+        
     }
     
 }
