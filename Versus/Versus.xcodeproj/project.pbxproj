@@ -27,6 +27,7 @@
 		DB77155E21A7EE1500123D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */; };
 		DB77156921A7EE1500123D82 /* VersusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77156821A7EE1500123D82 /* VersusTests.swift */; };
 		DB77157421A7EE1500123D82 /* VersusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77157321A7EE1500123D82 /* VersusUITests.swift */; };
+		DBADD3A521AD94F700A7113D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		DB77156F21A7EE1500123D82 /* VersusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77157321A7EE1500123D82 /* VersusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusUITests.swift; sourceTree = "<group>"; };
 		DB77157521A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
 				DB77155F21A7EE1500123D82 /* Info.plist */,
+				DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */,
 				55425D6A21A8257700D0D77B /* Player.swift */,
 				55425D6C21A827FF00D0D77B /* Tournament.swift */,
 				55425D6E21A829A300D0D77B /* Match.swift */,
@@ -316,6 +319,7 @@
 				DB77155921A7EE1300123D82 /* Main.storyboard in Resources */,
 				55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */,
 				55BDB58721ACD343005E8BF7 /* players.json in Resources */,
+				DBADD3A521AD94F700A7113D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
