@@ -55,7 +55,7 @@ class Tournament : NSObject{
     }
     
     func printTournamentInfos(){
-        print("Tournoi nommé" + self.name + "\n")
+        print("Tournoi nommé " + self.name + "\n")
         for match in self.matchs{
             match.printMatchInfos()
         }

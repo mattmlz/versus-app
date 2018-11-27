@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Nf-A3-P4w">
-                                <rect key="frame" x="79" y="343.5" width="217.5" height="98.5"/>
+                                <rect key="frame" x="84.5" y="343.5" width="206" height="80.5"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="69"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWv-FZ-Eit">
-                                <rect key="frame" x="89.5" y="542" width="196" height="64"/>
+                                <rect key="frame" x="96.5" y="524" width="182" height="54"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="36"/>
                                 <state key="normal" title="Let's Begin">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -294,15 +294,11 @@
                                     <action selector="addPlayersClick:" destination="PXQ-hx-KGN" eventType="touchUpInside" id="7y1-yp-dl7"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wm-yq-aLG">
-                                <rect key="frame" x="27.5" y="225.5" width="320" height="216"/>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.94376586294416243" green="0.94376586294416243" blue="0.94376586294416243" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="K46-Hu-aG8" firstAttribute="trailing" secondItem="Naf-7q-ATI" secondAttribute="trailing" id="08Y-nU-hhu"/>
                             <constraint firstItem="1RK-3J-TwG" firstAttribute="leading" secondItem="353-zN-jZU" secondAttribute="trailing" constant="96" id="3V6-Nm-ISY"/>
-                            <constraint firstItem="5wm-yq-aLG" firstAttribute="centerY" secondItem="09b-TS-rxo" secondAttribute="centerY" id="3cn-O8-K8q"/>
                             <constraint firstItem="Bou-j4-EXj" firstAttribute="bottom" secondItem="nIz-ZL-lDm" secondAttribute="bottom" id="5xw-fc-eMb"/>
                             <constraint firstItem="JeG-jP-S7h" firstAttribute="baseline" secondItem="1Ja-A0-45I" secondAttribute="baseline" id="7aX-ut-I1a"/>
                             <constraint firstItem="Bou-j4-EXj" firstAttribute="leading" secondItem="QrN-cG-Ghs" secondAttribute="leading" constant="155" id="7pm-Ca-hmX"/>
@@ -342,7 +338,6 @@
                             <constraint firstItem="h4a-eP-Lap" firstAttribute="leading" secondItem="G5w-Tg-Jdo" secondAttribute="leading" id="PzK-vC-MhF"/>
                             <constraint firstItem="1Ok-wC-YzM" firstAttribute="leading" secondItem="qFu-gL-mYI" secondAttribute="leading" id="Q9h-Zk-HW7"/>
                             <constraint firstItem="yfp-dx-4Jy" firstAttribute="top" secondItem="lVw-fZ-6Gm" secondAttribute="bottom" constant="8" symbolic="YES" id="R85-zc-0Zo"/>
-                            <constraint firstItem="5wm-yq-aLG" firstAttribute="centerX" secondItem="09b-TS-rxo" secondAttribute="centerX" id="RpQ-hC-qHU"/>
                             <constraint firstItem="159-is-QYn" firstAttribute="leading" secondItem="L6s-Fb-V2V" secondAttribute="leading" id="RzV-q8-zMP"/>
                             <constraint firstItem="Cjk-jO-gVb" firstAttribute="leading" secondItem="159-is-QYn" secondAttribute="leading" id="S1C-zO-9VI"/>
                             <constraint firstItem="1RK-3J-TwG" firstAttribute="baseline" secondItem="XI4-jR-QhC" secondAttribute="baseline" id="SPQ-P3-Lb3"/>
@@ -389,7 +384,6 @@
                         <outlet property="player6" destination="oa7-1O-2Qv" id="jsm-LH-Ys6"/>
                         <outlet property="player7" destination="oa7-1O-2Qv" id="h7e-yx-hSE"/>
                         <outlet property="player8" destination="Naf-7q-ATI" id="qKs-Gv-Clp"/>
-                        <outlet property="playerPicker" destination="5wm-yq-aLG" id="tCd-mF-Blj"/>
                         <outlet property="tournamentTextField" destination="yfp-dx-4Jy" id="j9N-mD-jCn"/>
                     </connections>
                 </viewController>
