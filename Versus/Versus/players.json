@@ -1,0 +1,32 @@
+{
+    "players":[
+        {
+            "pseudo" : "Thomas"
+            "points" : 20
+        },
+        {
+            "pseudo" : "Matthieu"
+            "points" : 12
+        },
+        {
+            "pseudo" : "Guillaume"
+            "points" : 36
+        },
+        {
+            "pseudo" : "Maxime"
+            "points" : 5
+        },
+        {
+            "pseudo" : "Samantha"
+            "points" : 47
+        },
+        {
+            "pseudo" : "Corto"
+            "points" : 56
+        },
+        {
+            "pseudo" : "Jean noel"
+            "points" : 28
+        }
+    ]
+}

@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8535630ABA21F847C2F759 /* Pods_Versus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D03BF92140ED042AE326AF /* Pods_Versus.framework */; };
 		55425D6B21A8257700D0D77B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D6A21A8257700D0D77B /* Player.swift */; };
 		55425D6D21A827FF00D0D77B /* Tournament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D6C21A827FF00D0D77B /* Tournament.swift */; };
 		55425D6F21A829A300D0D77B /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D6E21A829A300D0D77B /* Match.swift */; };
 		55425D7121A82BF700D0D77B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D7021A82BF700D0D77B /* Team.swift */; };
 		55425D7321A832C800D0D77B /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55425D7221A832C800D0D77B /* Game.swift */; };
 		5550CD4A21A9A4E300DF5CFE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */; };
+		558DC9C321ACE73A00B474B1 /* TournamentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */; };
+		55BDB58521ACC3F9005E8BF7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */; };
+		55BDB58721ACD343005E8BF7 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 55BDB58621ACD343005E8BF7 /* players.json */; };
 		55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */; };
+		A602A5C230872D7A855AAE6C /* Pods_VersusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */; };
+		C48FE0E93A9AAC3A0FFEA37B /* Pods_VersusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */; };
 		DB77155421A7EE1300123D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155321A7EE1300123D82 /* AppDelegate.swift */; };
 		DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155521A7EE1300123D82 /* LoginViewController.swift */; };
 		DB77155921A7EE1300123D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB77155721A7EE1300123D82 /* Main.storyboard */; };
@@ -41,13 +47,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03D03BF92140ED042AE326AF /* Pods_Versus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Versus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E6574AF4F3DEE8E955FFA0 /* Pods-Versus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Versus/Pods-Versus.release.xcconfig"; sourceTree = "<group>"; };
 		55425D6A21A8257700D0D77B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		55425D6C21A827FF00D0D77B /* Tournament.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tournament.swift; sourceTree = "<group>"; };
 		55425D6E21A829A300D0D77B /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		55425D7021A82BF700D0D77B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		55425D7221A832C800D0D77B /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewController.swift; sourceTree = "<group>"; };
+		55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		55BDB58621ACD343005E8BF7 /* players.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PermanentMarker.ttf; path = "../../../../../../Downloads/permanent-marker/PermanentMarker.ttf"; sourceTree = "<group>"; };
+		5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versus/Pods-Versus.debug.xcconfig"; sourceTree = "<group>"; };
+		6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2AA29B303664703E62CE8F4 /* Pods-VersusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.release.xcconfig"; sourceTree = "<group>"; };
+		D76B3FD19B7FB3817E987232 /* Pods-VersusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB77155021A7EE1300123D82 /* Versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77155321A7EE1300123D82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB77155521A7EE1300123D82 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +78,7 @@
 		DB77156F21A7EE1500123D82 /* VersusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77157321A7EE1500123D82 /* VersusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusUITests.swift; sourceTree = "<group>"; };
 		DB77157521A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8535630ABA21F847C2F759 /* Pods_Versus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C48FE0E93A9AAC3A0FFEA37B /* Pods_VersusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A602A5C230872D7A855AAE6C /* Pods_VersusUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +117,29 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		A5F46B9B6DEE03A77F4FE466 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */,
+				54E6574AF4F3DEE8E955FFA0 /* Pods-Versus.release.xcconfig */,
+				9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */,
+				D2AA29B303664703E62CE8F4 /* Pods-VersusTests.release.xcconfig */,
+				D76B3FD19B7FB3817E987232 /* Pods-VersusUITests.debug.xcconfig */,
+				6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC2F071A5EE6B22640F9F345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D03BF92140ED042AE326AF /* Pods_Versus.framework */,
+				F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */,
+				09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB77154721A7EE1200123D82 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +147,8 @@
 				DB77156721A7EE1500123D82 /* VersusTests */,
 				DB77157221A7EE1500123D82 /* VersusUITests */,
 				DB77155121A7EE1300123D82 /* Products */,
+				A5F46B9B6DEE03A77F4FE466 /* Pods */,
+				AC2F071A5EE6B22640F9F345 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +169,8 @@
 				DB77155321A7EE1300123D82 /* AppDelegate.swift */,
 				DB77155521A7EE1300123D82 /* LoginViewController.swift */,
 				5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */,
+				55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */,
+				558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */,
 				DB77155721A7EE1300123D82 /* Main.storyboard */,
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
@@ -132,6 +180,7 @@
 				55425D6E21A829A300D0D77B /* Match.swift */,
 				55425D7021A82BF700D0D77B /* Team.swift */,
 				55425D7221A832C800D0D77B /* Game.swift */,
+				55BDB58621ACD343005E8BF7 /* players.json */,
 			);
 			path = Versus;
 			sourceTree = "<group>";
@@ -161,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB77157821A7EE1500123D82 /* Build configuration list for PBXNativeTarget "Versus" */;
 			buildPhases = (
+				BD7028FD789D54F292C512E2 /* [CP] Check Pods Manifest.lock */,
 				DB77154C21A7EE1300123D82 /* Sources */,
 				DB77154D21A7EE1300123D82 /* Frameworks */,
 				DB77154E21A7EE1300123D82 /* Resources */,
+				B992829438D7A7A8D9D5C6F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB77157B21A7EE1500123D82 /* Build configuration list for PBXNativeTarget "VersusTests" */;
 			buildPhases = (
+				511BF26EA0758895AF47A101 /* [CP] Check Pods Manifest.lock */,
 				DB77156021A7EE1500123D82 /* Sources */,
 				DB77156121A7EE1500123D82 /* Frameworks */,
 				DB77156221A7EE1500123D82 /* Resources */,
@@ -196,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB77157E21A7EE1500123D82 /* Build configuration list for PBXNativeTarget "VersusUITests" */;
 			buildPhases = (
+				D508ADED196195B47300A104 /* [CP] Check Pods Manifest.lock */,
 				DB77156B21A7EE1500123D82 /* Sources */,
 				DB77156C21A7EE1500123D82 /* Frameworks */,
 				DB77156D21A7EE1500123D82 /* Resources */,
@@ -262,6 +315,7 @@
 				DB77155B21A7EE1500123D82 /* Assets.xcassets in Resources */,
 				DB77155921A7EE1300123D82 /* Main.storyboard in Resources */,
 				55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */,
+				55BDB58721ACD343005E8BF7 /* players.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +335,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		511BF26EA0758895AF47A101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VersusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B992829438D7A7A8D9D5C6F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Versus/Pods-Versus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Versus/Pods-Versus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD7028FD789D54F292C512E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Versus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D508ADED196195B47300A104 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VersusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB77154C21A7EE1300123D82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -291,9 +436,11 @@
 				55425D7321A832C800D0D77B /* Game.swift in Sources */,
 				5550CD4A21A9A4E300DF5CFE /* HomeViewController.swift in Sources */,
 				55425D7121A82BF700D0D77B /* Team.swift in Sources */,
+				558DC9C321ACE73A00B474B1 /* TournamentViewController.swift in Sources */,
 				55425D6B21A8257700D0D77B /* Player.swift in Sources */,
 				55425D6F21A829A300D0D77B /* Match.swift in Sources */,
 				DB77155421A7EE1300123D82 /* AppDelegate.swift in Sources */,
+				55BDB58521ACC3F9005E8BF7 /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,9 +613,11 @@
 		};
 		DB77157921A7EE1500123D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Versus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mt-creative.Versus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -483,9 +633,11 @@
 		};
 		DB77157A21A7EE1500123D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E6574AF4F3DEE8E955FFA0 /* Pods-Versus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Versus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +645,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mt-creative.Versus";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,6 +653,7 @@
 		};
 		DB77157C21A7EE1500123D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +674,7 @@
 		};
 		DB77157D21A7EE1500123D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2AA29B303664703E62CE8F4 /* Pods-VersusTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +695,7 @@
 		};
 		DB77157F21A7EE1500123D82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76B3FD19B7FB3817E987232 /* Pods-VersusUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +715,7 @@
 		};
 		DB77158021A7EE1500123D82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

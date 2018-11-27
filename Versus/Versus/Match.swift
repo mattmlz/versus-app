@@ -12,7 +12,9 @@ class Match : NSObject{
     /* winner : The winning team
     *  rank : The match rank (1 = first round etc...)
     * played : If the match was already played
-     * previousMatch : The previous match in the bracket
+     * playerOne : The first contestant
+     * playerTwo : The second contestant
+     * number : The position of the match
      * nextMatch : The next match in the bracket
      * tournament : The tournament's id
     */
@@ -23,17 +25,20 @@ class Match : NSObject{
     var playerOne : Player!
     var playerTwo : Player!
     var played : Bool = false
+    var number : Int = 0
     
     // Basic constructor
-    init(rank: Int, tournament: Tournament){
+    init(number: Int,rank: Int, tournament: Tournament){
         super.init()
+        self.number = number
         self.rank = rank
         self.tournament = tournament
     }
     
     // Constructor with the two players
-    init(rank: Int, tournament: Tournament, playerOne: Player, playerTwo : Player){
+    init(number: Int,rank: Int, tournament: Tournament, playerOne: Player, playerTwo : Player){
         super.init()
+        self.number = number
         self.rank = rank
         self.tournament = tournament
         self.playerOne = playerOne
@@ -41,16 +46,18 @@ class Match : NSObject{
     }
     
     // Constructor with the next match
-    init(rank: Int, tournament: Tournament, nextMatch: Match){
+    init(number: Int,rank: Int, tournament: Tournament, nextMatch: Match){
         super.init()
+        self.number = number
         self.rank = rank
         self.tournament = tournament
         self.nextMatch = nextMatch
     }
     
     // Constructor with the next match and the two players
-    init(rank: Int, tournament: Tournament, nextMatch : Match, playerOne: Player, playerTwo : Player){
+    init(number: Int,rank: Int, tournament: Tournament, nextMatch : Match, playerOne: Player, playerTwo : Player){
         super.init()
+        self.number = number
         self.rank = rank
         self.tournament = tournament
         self.nextMatch = nextMatch
@@ -76,6 +83,18 @@ class Match : NSObject{
     
     func addPlayer(_ player: Player){
         
+    }
+    
+    func printMatchInfos(){
+        if(self.playerOne != nil && self.playerTwo != nil){
+            print("Match numéro " + String(self.number) + "\n")
+            print("opposant " + self.playerOne.pseudo)
+            print(" à " + self.playerTwo.pseudo + "\n")
+            print("et qui se déroule pendant la " + String(self.rank) + " phase" + "\n")
+        }else{
+            print("Match numéro " + String(self.number) + "\n")
+            print("et qui se déroule pendant la " + String(self.rank) + " phase" + "\n")
+        }
     }
     
 }

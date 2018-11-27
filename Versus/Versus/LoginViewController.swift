@@ -23,8 +23,8 @@ class LoginViewController: UIViewController {
         letsBegin.layer.cornerRadius = 5
         letsBegin.layer.borderColor = UIColor.white.cgColor
     }
-    
-    @IBAction func clickLetsbegin(_ sender: Any) {
+
+    @IBAction func letsBeginClick(_ sender: UIButton) {
         
         //afficher la home
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -33,7 +33,6 @@ class LoginViewController: UIViewController {
         
         present(homeViewController, animated: true, completion: nil)
     }
-
-
+    
 }
 
