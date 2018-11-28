@@ -21,9 +21,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var player6: UITextField!
     @IBOutlet weak var player7: UITextField!
     @IBOutlet weak var player8: UITextField!
+    @IBOutlet weak var playerNumber: UITextField!
     
     let playerPicker =  UIPickerView()
-    let allPlayersTextField: [UITextField] = []
+    var allPlayersTextField: [UITextField] = []
     let possiblePlayersNumbers: [String] = ["4","8"]
     let playersPseudo: [String] = ["Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy"]
     var selectedTextField: UITextField = UITextField()
@@ -32,36 +33,26 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Get all the players pseudo stored
-        /*let path = Bundle.main.path(forResource: "players", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let jsonObj = try JSON(data: data)
-                print("jsonData:\(jsonObj)")
-            } catch let error {
-                print("parse error: \(error.localizedDescription)")
-            }
-        
-        for (index,subJson):(String, JSON) in json {
-            // Do something you want
-        }*/
-        
-        // All our players textFields
-        let allPlayersTextField: [UITextField] = [player1,player2,player3,player4,player5,player6,player7,player8]
+        allPlayersTextField = [player1,player2,player3,player4,player5,player6,player7,player8]
         
         playerPicker.delegate = self
+        
+        //gameTextField.delegate = self
         
         // Picker view for all our players textField
         for playerTextField in allPlayersTextField{
             playerTextField.inputView = playerPicker
         }
+        
+        //allow tap on screen to remove text field input from screen
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
+    // Picker View methods
     func textFieldDidBeginEditing(_ textField: UITextField) {
         self.selectedTextField = textField
     }
-    
-    // Picker view methods
+
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -75,8 +66,6 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print(playersPseudo[row] + "\n")
-        print(selectedTextField)
         view.selectedTextField?.text = playersPseudo[row]
         self.view.endEditing(true)
     }
@@ -87,20 +76,16 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                 thePlayers.append(Player(pseudo: playerTextField.text!))
             }
         }
+        
         let theTournament = Tournament(name: tournamentTextField.text!, players: thePlayers)
         theTournament.printTournamentInfos()
-        
-/*
-         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        let tournamentViewController = storyboard.instantiateViewController(withIdentifier: "PlayersViewController") as! TournamentViewController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tournamentViewController = storyboard.instantiateViewController(withIdentifier: "TournamentViewController") as! TournamentViewController
         
         //PUSH
         navigationController?.pushViewController(tournamentViewController, animated: true)
          
-         tournamentViewController.tournament = theTournament
- */
-        
+        tournamentViewController.tournament = theTournament        
     }
     
     @IBAction func addPlayersClick(_ sender: UIButton) {
