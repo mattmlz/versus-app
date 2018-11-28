@@ -13,6 +13,11 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var tournamentTextField: UITextField!
     
+    @IBOutlet weak var textPlayer5: UILabel!
+    @IBOutlet weak var textPlayer6: UILabel!
+    @IBOutlet weak var textPlayer7: UILabel!
+    @IBOutlet weak var textPlayer8: UILabel!
+    
     @IBOutlet weak var player1: UITextField!
     @IBOutlet weak var player2: UITextField!
     @IBOutlet weak var player3: UITextField!
@@ -25,27 +30,46 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     let playerPicker =  UIPickerView()
     var allPlayersTextField: [UITextField] = []
-    let possiblePlayersNumbers: [String] = ["4","8"]
     let playersPseudo: [String] = ["Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy"]
+    let playersNumberAllows: [String] = ["4","8"]
     var selectedTextField: UITextField = UITextField()
     var thePlayers : [Player] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Players picker
         allPlayersTextField = [player1,player2,player3,player4,player5,player6,player7,player8]
         
         playerPicker.delegate = self
-        
-        //gameTextField.delegate = self
+        playerNumber.delegate = self
+        playerNumber.inputView = playerPicker
         
         // Picker view for all our players textField
         for playerTextField in allPlayersTextField{
+            playerTextField.delegate = self
             playerTextField.inputView = playerPicker
         }
         
         //allow tap on screen to remove text field input from screen
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
+        
+        // Player number field
+        playerNumber.text = "4"
+        
+        // Hide player 5 to 8 by default
+        player5.isHidden = true
+        player6.isHidden = true
+        player7.isHidden = true
+        player8.isHidden = true
+        textPlayer5.isHidden = true
+        textPlayer6.isHidden = true
+        textPlayer7.isHidden = true
+        textPlayer8.isHidden = true
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     // Picker View methods
@@ -58,16 +82,29 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return playersPseudo.count
+        if(playerNumber.isFirstResponder){
+            return playersNumberAllows.count
+        }else{
+            return playersPseudo.count
+        }
     }
     
     func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return playersPseudo[row]
+        if(playerNumber.isFirstResponder){
+            return playersNumberAllows[row]
+        }else{
+            return playersPseudo[row]
+        }
     }
     
     func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        view.selectedTextField?.text = playersPseudo[row]
-        self.view.endEditing(true)
+        if(playerNumber.isFirstResponder){
+            view.selectedTextField?.text = playersNumberAllows[row]
+            self.view.endEditing(true)
+        }else{
+            view.selectedTextField?.text = playersPseudo[row]
+            self.view.endEditing(true)
+        }
     }
     
     @IBAction func letsRumbleClick(_ sender: UIButton) {

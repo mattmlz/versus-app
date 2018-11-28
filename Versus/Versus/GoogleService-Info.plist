@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>576388658057-5guqlhucs2i7p27j8r2jmtiatvjgnrsg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.576388658057-5guqlhucs2i7p27j8r2jmtiatvjgnrsg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCXOyIDKJSWu7ja3OPz5brnFEfgMDgSr3w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>576388658057</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mt-creative</string>
+	<key>PROJECT_ID</key>
+	<string>versus-app-bc4f4</string>
+	<key>STORAGE_BUCKET</key>
+	<string>versus-app-bc4f4.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:576388658057:ios:bbd6262f7fd58d89</string>
+	<key>DATABASE_URL</key>
+	<string>https://versus-app-bc4f4.firebaseio.com</string>
+</dict>
+</plist>
