@@ -30,6 +30,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     let playerPicker =  UIPickerView()
     var allPlayersTextField: [UITextField] = []
+    var morePlayersTextField: [UITextField] = []
+    var morePlayersLabel: [UILabel] = []
     let playersPseudo: [String] = ["Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy"]
     let playersNumberAllows: [String] = ["4","8"]
     var selectedTextField: UITextField = UITextField()
@@ -40,6 +42,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         
         // Players picker
         allPlayersTextField = [player1,player2,player3,player4,player5,player6,player7,player8]
+        
+        // More players field
+        morePlayersTextField = [player5,player6,player7,player8]
+        morePlayersLabel = [textPlayer5,textPlayer6,textPlayer7,textPlayer8]
         
         playerPicker.delegate = self
         playerNumber.delegate = self
@@ -58,14 +64,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         playerNumber.text = "4"
         
         // Hide player 5 to 8 by default
-        player5.isHidden = true
-        player6.isHidden = true
-        player7.isHidden = true
-        player8.isHidden = true
-        textPlayer5.isHidden = true
-        textPlayer6.isHidden = true
-        textPlayer7.isHidden = true
-        textPlayer8.isHidden = true
+        showPlayers(4)
     }
     
     override func didReceiveMemoryWarning() {
@@ -101,9 +100,28 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         if(playerNumber.isFirstResponder){
             view.selectedTextField?.text = playersNumberAllows[row]
             self.view.endEditing(true)
+            showPlayers(Int(playersNumberAllows[row]) ?? 4)
         }else{
             view.selectedTextField?.text = playersPseudo[row]
             self.view.endEditing(true)
+        }
+    }
+    
+    func showPlayers(_ numberOfPlayers: Int){
+        if(numberOfPlayers == 8){
+            for morePlayerField in morePlayersTextField{
+                morePlayerField.isHidden = false
+            }
+            for morePlayerLabel in morePlayersLabel{
+                morePlayerLabel.isHidden = false
+            }
+        }else if(numberOfPlayers == 4){
+            for morePlayerField in morePlayersTextField{
+                morePlayerField.isHidden = true
+            }
+            for morePlayerLabel in morePlayersLabel{
+                morePlayerLabel.isHidden = true
+            }
         }
     }
     

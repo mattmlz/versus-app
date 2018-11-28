@@ -18,6 +18,7 @@
 		55BDB58521ACC3F9005E8BF7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */; };
 		55BDB58721ACD343005E8BF7 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 55BDB58621ACD343005E8BF7 /* players.json */; };
 		55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */; };
+		55FEFB8421AF22EA00CF33F4 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FEFB8321AF22EA00CF33F4 /* MatchTableViewCell.swift */; };
 		A602A5C230872D7A855AAE6C /* Pods_VersusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */; };
 		C48FE0E93A9AAC3A0FFEA37B /* Pods_VersusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */; };
 		DB77155421A7EE1300123D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155321A7EE1300123D82 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		55BDB58621ACD343005E8BF7 /* players.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PermanentMarker.ttf; path = "../../../../../../Downloads/permanent-marker/PermanentMarker.ttf"; sourceTree = "<group>"; };
+		55FEFB8321AF22EA00CF33F4 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versus/Pods-Versus.debug.xcconfig"; sourceTree = "<group>"; };
 		6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */,
 				55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */,
 				558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */,
+				55FEFB8321AF22EA00CF33F4 /* MatchTableViewCell.swift */,
 				DB77155721A7EE1300123D82 /* Main.storyboard */,
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
@@ -441,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FEFB8421AF22EA00CF33F4 /* MatchTableViewCell.swift in Sources */,
 				55425D6D21A827FF00D0D77B /* Tournament.swift in Sources */,
 				DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */,
 				55425D7321A832C800D0D77B /* Game.swift in Sources */,
