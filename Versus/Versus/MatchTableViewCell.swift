@@ -11,7 +11,8 @@ import UIKit
 class MatchTableViewCell: UITableViewCell {
     
     @IBOutlet weak var winnerLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var player1Button: UIButton!
+    @IBOutlet weak var player2Button: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -438,16 +438,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ICK-Ni-w8N">
+
                                 <rect key="frame" x="16" y="158" width="343" height="489"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchCell" rowHeight="103" id="IZ2-Qd-d4S" userLabel="MatchCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MatchCell" rowHeight="103" id="IZ2-Qd-d4S" userLabel="MatchCell" customClass="MatchTableViewCell" customModule="Versus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IZ2-Qd-d4S" id="pom-gq-QMX">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="102.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                              
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nca-oY-a8v">
                                                     <rect key="frame" x="28" y="63" width="73" height="29"/>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -455,6 +458,7 @@
                                                         <constraint firstAttribute="height" constant="29" id="CjI-4x-z81"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="20"/>
+
                                                     <state key="normal" title="Player 2">
                                                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
@@ -481,6 +485,7 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
+
                                                 <constraint firstItem="dQW-gq-yh1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nca-oY-a8v" secondAttribute="trailing" constant="8" symbolic="YES" id="8jO-k4-0Vs"/>
                                                 <constraint firstItem="Nca-oY-a8v" firstAttribute="top" secondItem="fXo-V6-9UY" secondAttribute="bottom" constant="23" id="Cq1-kE-bRF"/>
                                                 <constraint firstItem="fXo-V6-9UY" firstAttribute="top" secondItem="pom-gq-QMX" secondAttribute="topMargin" constant="-7" id="Iij-VP-2Ng"/>
@@ -494,8 +499,14 @@
                                                 <constraint firstItem="dQW-gq-yh1" firstAttribute="top" secondItem="pom-gq-QMX" secondAttribute="topMargin" constant="2" id="t4f-g9-EZ6"/>
                                                 <constraint firstItem="Nca-oY-a8v" firstAttribute="bottom" secondItem="pom-gq-QMX" secondAttribute="bottomMargin" id="trB-FK-TJ8"/>
                                                 <constraint firstItem="RTF-k9-PGt" firstAttribute="top" secondItem="pom-gq-QMX" secondAttribute="topMargin" constant="21" id="vvT-7s-6cx"/>
+
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="player1Button" destination="fXo-V6-9UY" id="w9L-Md-rjV"/>
+                                            <outlet property="player2Button" destination="Nca-oY-a8v" id="cl2-ZF-XcJ"/>
+                                            <outlet property="winnerLabel" destination="dQW-gq-yh1" id="T7e-is-gI7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
