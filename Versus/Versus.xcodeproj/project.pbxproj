@@ -17,6 +17,7 @@
 		558DC9C321ACE73A00B474B1 /* TournamentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */; };
 		55BDB58521ACC3F9005E8BF7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */; };
 		55BDB58721ACD343005E8BF7 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 55BDB58621ACD343005E8BF7 /* players.json */; };
+
 		A602A5C230872D7A855AAE6C /* Pods_VersusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */; };
 		C48FE0E93A9AAC3A0FFEA37B /* Pods_VersusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */; };
 		DB2DE2CD21AEDC4400266A8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE2CC21AEDC4400266A8F /* GoogleService-Info.plist */; };
@@ -61,6 +62,7 @@
 		558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewController.swift; sourceTree = "<group>"; };
 		55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		55BDB58621ACD343005E8BF7 /* players.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
+
 		5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versus/Pods-Versus.debug.xcconfig"; sourceTree = "<group>"; };
 		6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		DB77156F21A7EE1500123D82 /* VersusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77157321A7EE1500123D82 /* VersusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusUITests.swift; sourceTree = "<group>"; };
 		DB77157521A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
 		F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -174,6 +177,7 @@
 				5550CD4921A9A4E300DF5CFE /* HomeViewController.swift */,
 				55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */,
 				558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */,
+				55FEFB8321AF22EA00CF33F4 /* MatchTableViewCell.swift */,
 				DB77155721A7EE1300123D82 /* Main.storyboard */,
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
@@ -373,6 +377,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Versus/Pods-Versus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -382,6 +387,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -443,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FEFB8421AF22EA00CF33F4 /* MatchTableViewCell.swift in Sources */,
 				55425D6D21A827FF00D0D77B /* Tournament.swift in Sources */,
 				DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */,
 				55425D7321A832C800D0D77B /* Game.swift in Sources */,
@@ -631,6 +638,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Versus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -651,6 +659,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Versus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,6 +680,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VersusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,6 +702,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = VersusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
