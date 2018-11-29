@@ -35,6 +35,8 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     var thePlayers : [Player] = []
     
     let gameNamePicker = UIPickerView()
+    let allGamesTextField: [UITextField] = []
+    var gameNameValues: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,15 +60,15 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         let ref: DatabaseReference!
         ref = Database.database().reference()
         
-        let refHandle = ref.child("players").observe(DataEventType.value, with: { (snapshot) in
-            let SnapchotPlayersName = snapshot.value as? [String : AnyObject] ?? [:]
+        //[START display names in pickers from DB]
+        ref.child("players").observe(DataEventType.value, with: { (snapshot) in
             let SnapchotPlayersNameCount = snapshot.childrenCount
             
             var i = 1
             var increment = String(i)
             
             while i <= SnapchotPlayersNameCount {
-                let refHandled = ref.child("players").child(increment).observe(DataEventType.value, with: {(snapshot) in
+                ref.child("players").child(increment).observe(DataEventType.value, with: {(snapshot) in
                     let PlayersName = snapshot.value as? [String : AnyObject] ?? [:]
                     self.playersPseudo.append(PlayersName["name"]! as! String)
                 })
@@ -74,17 +76,43 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                 increment = String(i)
             }
         })
+        //[END display names in pickers from DB]
         
-        //[END display names in picked from DB]
+        //[START display games in pickers from DB]
+        ref.child("games_list").observe(DataEventType.value, with: { (snapshot) in
+            let SnapchotGamesNamesCount = snapshot.childrenCount
+            
+            var i = 1
+            var increment = String(i)
+            
+            while i <= SnapchotGamesNamesCount {
+                ref.child("games_list").child(increment).observe(DataEventType.value, with: {(snapshot) in
+                    let GamesName = snapshot.value as? [String : AnyObject] ?? [:]
+                    self.gameNameValues.append(GamesName["name"]! as! String)
+                })
+                i = i + 1
+                increment = String(i)
+            }
+        })
+        //[END display games in pickers from DB]
         
         // All our players textFields
         let allPlayersTextField: [UITextField] = [player1,player2,player3,player4,player5,player6,player7,player8]
+        let allGamesTextField: [UITextField] = [gameName]
         
         playerPicker.delegate = self
+        gameNamePicker.delegate = self
+        
+        print(gameNameValues.count)
         
         // Picker view for all our players textField
         for playerTextField in allPlayersTextField{
             playerTextField.inputView = playerPicker
+        }
+        
+        // Picker view for all our games textField
+        for gamesTextField in allGamesTextField{
+            gamesTextField.inputView = gameNamePicker
         }
     }
     
@@ -98,18 +126,32 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return playersPseudo.count
+        if component == 0 {
+            return playersPseudo.count
+        } else {
+            return gameNameValues.count
+        }
     }
     
     func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return playersPseudo[row]
+        if component == 0 {
+            return playersPseudo[row]
+        } else {
+            return gameNameValues[row]
+        }
     }
     
     func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(playersPseudo[row] + "\n")
         print(selectedTextField)
-        view.selectedTextField?.text = playersPseudo[row]
-        self.view.endEditing(true)
+        
+        if component == 0 {
+            view.selectedTextField?.text = playersPseudo[row]
+            self.view.endEditing(true)
+        } else {
+            view.selectedTextField?.text = gameNameValues[row]
+            self.view.endEditing(true)
+        }
     }
     
     @IBAction func letsRumbleClick(_ sender: UIButton) {
