@@ -11,7 +11,6 @@ import SwiftyJSON
 import Firebase
 import FirebaseDatabase
 
-
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var tournamentTextField: UITextField!
@@ -34,25 +33,21 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     @IBOutlet weak var gameName: UITextField!
     
-    let playerPicker =  UIPickerView()
+    let myPicker =  UIPickerView()
 
-    let allPlayersTextField: [UITextField] = []
+    var allPlayersTextField: [UITextField] = []
     let possiblePlayersNumbers: [String] = ["4","8"]
     var playersPseudo: [String] = []
 
     var selectedTextField: UITextField = UITextField()
     var thePlayers : [Player] = []
-    
-    let gameNamePicker = UIPickerView()
-    let allGamesTextField: [UITextField] = []
+    var morePlayersTextField: [UITextField] = []
+    var morePlayersLabel: [UILabel] = []
+    var allGamesTextField: [UITextField] = []
     var gameNameValues: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Players picker
-        allPlayersTextField = [player1,player2,player3,player4,player5,player6,player7,player8]
-        
 
         // Connexion to FIREBASE
         // [START display names in picked from DB]
@@ -96,34 +91,30 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         //[END display games in pickers from DB]
         
         // All our players textFields
-        let allPlayersTextField: [UITextField] = [player1,player2,player3,player4,player5,player6,player7,player8]
-        let allGamesTextField: [UITextField] = [gameName]
+        allPlayersTextField = [player1,player2,player3,player4,player5,player6,player7,player8]
         
-        playerPicker.delegate = self
-        gameNamePicker.delegate = self
+        allGamesTextField = [gameName]
         
-        print(gameNameValues.count)
+        myPicker.delegate = self
 
         // More players field
         morePlayersTextField = [player5,player6,player7,player8]
         morePlayersLabel = [textPlayer5,textPlayer6,textPlayer7,textPlayer8]
         
-        playerPicker.delegate = self
         playerNumber.delegate = self
-        playerNumber.inputView = playerPicker
+        playerNumber.inputView = myPicker
 
         
         // Picker view for all our players textField
         for playerTextField in allPlayersTextField{
             playerTextField.delegate = self
-            playerTextField.inputView = playerPicker
+            playerTextField.inputView = myPicker
         }
-        
 
         // Picker view for all our games textField
-        for gamesTextField in allGamesTextField{
-            gamesTextField.inputView = gameNamePicker
-        }
+        gameName.inputView = myPicker
+        gameName.delegate = self
+        
 
         //allow tap on screen to remove text field input from screen
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
@@ -150,13 +141,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     func pickerView( _ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
 
-        if component == 0 {
-            return playersPseudo.count
-        } else {
-            return gameNameValues.count
-
         if(playerNumber.isFirstResponder){
-            return playersNumberAllows.count
+            return possiblePlayersNumbers.count
+        }else if(gameName.isFirstResponder){
+            return gameNameValues.count
         }else{
             return playersPseudo.count
 
@@ -164,14 +152,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView( _ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-
-        if component == 0 {
-            return playersPseudo[row]
-        } else {
-            return gameNameValues[row]
-
         if(playerNumber.isFirstResponder){
-            return playersNumberAllows[row]
+            return possiblePlayersNumbers[row]
+        }else if(gameName.isFirstResponder){
+            return gameNameValues[row]
         }else{
             return playersPseudo[row]
 
@@ -179,22 +163,13 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     func pickerView( _ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-
-        print(playersPseudo[row] + "\n")
-        print(selectedTextField)
-        
-        if component == 0 {
-            view.selectedTextField?.text = playersPseudo[row]
+        if(playerNumber.isFirstResponder){
+            view.selectedTextField?.text = possiblePlayersNumbers[row]
             self.view.endEditing(true)
-        } else {
+            showPlayers(Int(possiblePlayersNumbers[row]) ?? 4)
+        }else if(gameName.isFirstResponder){
             view.selectedTextField?.text = gameNameValues[row]
             self.view.endEditing(true)
-        }
-
-        if(playerNumber.isFirstResponder){
-            view.selectedTextField?.text = playersNumberAllows[row]
-            self.view.endEditing(true)
-            showPlayers(Int(playersNumberAllows[row]) ?? 4)
         }else{
             view.selectedTextField?.text = playersPseudo[row]
             self.view.endEditing(true)
@@ -217,7 +192,6 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
                 morePlayerLabel.isHidden = true
             }
         }
-
     }
     
     @IBAction func letsRumbleClick(_ sender: UIButton) {

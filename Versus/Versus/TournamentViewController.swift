@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SwiftyJSON
+import SwiftyJSON
 
 class TournamentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
