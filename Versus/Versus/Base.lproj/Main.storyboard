@@ -77,7 +77,9 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New tournament" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-pK-Ygx">
+
                                         <rect key="frame" x="25" y="6.5" width="325" height="57.5"/>
+
                                         <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -94,7 +96,9 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tournament's name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVw-fZ-6Gm">
+
                                 <rect key="frame" x="14.5" y="142" width="188.5" height="20"/>
+
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="pjG-i6-nV1"/>
                                 </constraints>
@@ -132,7 +136,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Players" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6s-Fb-V2V">
+
                                 <rect key="frame" x="14.5" y="277" width="62" height="25"/>
+
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="g4g-PN-msd"/>
                                 </constraints>
@@ -208,20 +214,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5w-Tg-Jdo" userLabel="Player5Text">
+
                                 <rect key="frame" x="155" y="469" width="66" height="22"/>
+
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ok-wC-YzM">
+
                                 <rect key="frame" x="267" y="439.5" width="69" height="24.5"/>
+
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4a-eP-Lap">
+
                                 <rect key="frame" x="155" y="439.5" width="70.5" height="24.5"/>
+
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -234,26 +246,34 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-1O-2Qv" userLabel="Player7Text">
+
                                 <rect key="frame" x="155" y="528.5" width="66" height="22"/>
+
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K46-Hu-aG8">
+
                                 <rect key="frame" x="267" y="499" width="69.5" height="24.5"/>
+
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ND-gy-rEF">
+
                                 <rect key="frame" x="155" y="499" width="70.5" height="24.5"/>
+
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-Lw-54S">
+
                                 <rect key="frame" x="267" y="273.5" width="86" height="34"/>
+
                                 <color key="backgroundColor" red="0.043137254899999998" green="0.63137254899999995" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="15"/>
                                 <state key="normal" title="Add Players">
@@ -365,6 +385,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="591-Db-K8I"/>
                     <connections>
+                        <outlet property="gameName" destination="159-is-QYn" id="7q7-go-rbM"/>
                         <outlet property="player1" destination="Bou-j4-EXj" id="ezE-Jv-dte"/>
                         <outlet property="player2" destination="nIz-ZL-lDm" id="mvt-hK-bDU"/>
                         <outlet property="player3" destination="JeG-jP-S7h" id="VlH-qV-1Uc"/>
@@ -373,12 +394,14 @@
                         <outlet property="player6" destination="qFu-gL-mYI" id="Kqh-n2-mBI"/>
                         <outlet property="player7" destination="oa7-1O-2Qv" id="h7e-yx-hSE"/>
                         <outlet property="player8" destination="Naf-7q-ATI" id="qKs-Gv-Clp"/>
+
                         <outlet property="playerNumber" destination="353-zN-jZU" id="oQq-nE-Lnv"/>
                         <outlet property="textPlayer5" destination="h4a-eP-Lap" id="aVZ-bP-Rqd"/>
                         <outlet property="textPlayer6" destination="1Ok-wC-YzM" id="E8W-Ee-KXS"/>
                         <outlet property="textPlayer7" destination="0ND-gy-rEF" id="AYf-mC-79V"/>
                         <outlet property="textPlayer8" destination="K46-Hu-aG8" id="ajG-hv-c5C"/>
                         <outlet property="tournamentTextField" destination="353-zN-jZU" id="DzF-Jx-jpE"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuc-gG-mao" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -397,7 +420,9 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My tournament" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUf-c6-hPC">
+
                                         <rect key="frame" x="38" y="14" width="299" height="42"/>
+
                                         <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -525,10 +550,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-Qd-FGU" userLabel="Fond Rouge">
-                                <rect key="frame" x="0.0" y="63" width="375" height="79.5"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="69"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE PLAYERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARZ-AG-od6">
-                                        <rect key="frame" x="25" y="11" width="325" height="57.5"/>
+                                        <rect key="frame" x="25" y="11" width="325" height="47"/>
                                         <fontDescription key="fontDescription" name="PermanentMarker" family="Permanent Marker" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
