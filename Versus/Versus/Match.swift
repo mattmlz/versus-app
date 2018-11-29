@@ -82,7 +82,11 @@ class Match : NSObject{
     }
     
     func addPlayer(_ player: Player){
-        
+        if(self.playerOne == nil){
+            self.playerOne = player
+        }else if(self.playerTwo == nil){
+            self.playerTwo = player
+        }
     }
     
     func printMatchInfos(){
