@@ -27,9 +27,8 @@ class TournamentViewController: UIViewController, UITableViewDelegate, UITableVi
                 self.matchs.append(match)
             }
         }
-        
+        self.tableView.separatorColor = self.tableView.backgroundColor
         self.tableView.reloadData()
-        
     }
     
     //delegate tableview
@@ -40,7 +39,6 @@ class TournamentViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //design de la ligne ?
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         //cellule prototype depuis le storyboard + réutilisation de cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "MatchCell", for: indexPath) as! MatchTableViewCell
         
@@ -49,6 +47,9 @@ class TournamentViewController: UIViewController, UITableViewDelegate, UITableVi
         //indexPath.row -> la ligne
         cell.player1Button.setTitle(match.playerOne.pseudo, for: UIControl.State.normal)
         cell.player2Button.setTitle(match.playerTwo.pseudo, for: UIControl.State.normal)
+        
+        cell.player1Button.tag = indexPath.row;
+        cell.player2Button.tag = indexPath.row;
         
         return cell
     }
@@ -64,8 +65,27 @@ class TournamentViewController: UIViewController, UITableViewDelegate, UITableVi
         
     }
     
+    @IBAction func player1ButtonClick(_ sender: UIButton) {
+        let indexPath = NSIndexPath(row: sender.tag, section: 0)
+        let cell = self.tableView.cellForRow(at: indexPath as IndexPath) as! MatchTableViewCell
+        cell.player1Button.titleLabel?.textColor = UIColor.green
+        cell.player2Button.titleLabel?.textColor = UIColor.red
+        cell.winnerLabel.text = cell.player1Button.titleLabel?.text
+        
+        let match = matchs[indexPath.row]
+        match.nextMatch?.addPlayer(match.playerOne)
+        match.played = true
+    }
     
-    @objc func buttonAction(sender: UIButton!) {
-        print("Button tapped")
-    }    
+    @IBAction func player2ButtonClick(_ sender: UIButton) {
+        let indexPath = NSIndexPath(row: sender.tag, section: 0)
+        let cell = self.tableView.cellForRow(at: indexPath as IndexPath) as! MatchTableViewCell
+        cell.player1Button.titleLabel?.textColor = UIColor.red
+        cell.player2Button.titleLabel?.textColor = UIColor.green
+        cell.winnerLabel.text = cell.player2Button.titleLabel?.text
+        
+        let match = matchs[indexPath.row]
+        match.nextMatch?.addPlayer(match.playerTwo)
+        match.played = true
+    }
 }
