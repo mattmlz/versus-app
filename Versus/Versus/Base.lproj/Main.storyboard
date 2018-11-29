@@ -376,6 +376,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="591-Db-K8I"/>
                     <connections>
+                        <outlet property="gameName" destination="159-is-QYn" id="7q7-go-rbM"/>
                         <outlet property="player1" destination="Bou-j4-EXj" id="ezE-Jv-dte"/>
                         <outlet property="player2" destination="nIz-ZL-lDm" id="mvt-hK-bDU"/>
                         <outlet property="player3" destination="JeG-jP-S7h" id="VlH-qV-1Uc"/>

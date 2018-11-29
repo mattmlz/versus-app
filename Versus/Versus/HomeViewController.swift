@@ -8,10 +8,13 @@
 
 import UIKit
 import SwiftyJSON
+import Firebase
+import FirebaseDatabase
 
 class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var tournamentTextField: UITextField!
+    @IBOutlet weak var playersNumber: UITextField!
     
     @IBOutlet weak var player1: UITextField!
     @IBOutlet weak var player2: UITextField!
@@ -22,12 +25,16 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     @IBOutlet weak var player7: UITextField!
     @IBOutlet weak var player8: UITextField!
     
+    @IBOutlet weak var gameName: UITextField!
+    
     let playerPicker =  UIPickerView()
     let allPlayersTextField: [UITextField] = []
     let possiblePlayersNumbers: [String] = ["4","8"]
-    let playersPseudo: [String] = ["Peter", "Jane", "Paul", "Mary", "Kevin", "Lucy"]
+    var playersPseudo: [String] = []
     var selectedTextField: UITextField = UITextField()
     var thePlayers : [Player] = []
+    
+    let gameNamePicker = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +52,30 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         for (index,subJson):(String, JSON) in json {
             // Do something you want
         }*/
+        
+        // Connexion to FIREBASE
+        // [START display names in picked from DB]
+        let ref: DatabaseReference!
+        ref = Database.database().reference()
+        
+        let refHandle = ref.child("players").observe(DataEventType.value, with: { (snapshot) in
+            let SnapchotPlayersName = snapshot.value as? [String : AnyObject] ?? [:]
+            let SnapchotPlayersNameCount = snapshot.childrenCount
+            
+            var i = 1
+            var increment = String(i)
+            
+            while i <= SnapchotPlayersNameCount {
+                let refHandled = ref.child("players").child(increment).observe(DataEventType.value, with: {(snapshot) in
+                    let PlayersName = snapshot.value as? [String : AnyObject] ?? [:]
+                    self.playersPseudo.append(PlayersName["name"]! as! String)
+                })
+                i = i + 1
+                increment = String(i)
+            }
+        })
+        
+        //[END display names in picked from DB]
         
         // All our players textFields
         let allPlayersTextField: [UITextField] = [player1,player2,player3,player4,player5,player6,player7,player8]

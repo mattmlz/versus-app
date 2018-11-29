@@ -17,9 +17,11 @@
 		558DC9C321ACE73A00B474B1 /* TournamentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */; };
 		55BDB58521ACC3F9005E8BF7 /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */; };
 		55BDB58721ACD343005E8BF7 /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 55BDB58621ACD343005E8BF7 /* players.json */; };
-		55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */; };
 		A602A5C230872D7A855AAE6C /* Pods_VersusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA7403BA7E6195BE8A5461 /* Pods_VersusUITests.framework */; };
 		C48FE0E93A9AAC3A0FFEA37B /* Pods_VersusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */; };
+		DB2DE2CD21AEDC4400266A8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE2CC21AEDC4400266A8F /* GoogleService-Info.plist */; };
+		DB2DE2D321AEE3A700266A8F /* PermanentMarker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE2D221AEE3A700266A8F /* PermanentMarker.ttf */; };
+		DB2DE2D621AEE45200266A8F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2DE2D521AEE45200266A8F /* Info.plist */; };
 		DB77155421A7EE1300123D82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155321A7EE1300123D82 /* AppDelegate.swift */; };
 		DB77155621A7EE1300123D82 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77155521A7EE1300123D82 /* LoginViewController.swift */; };
 		DB77155921A7EE1300123D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB77155721A7EE1300123D82 /* Main.storyboard */; };
@@ -27,7 +29,6 @@
 		DB77155E21A7EE1500123D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */; };
 		DB77156921A7EE1500123D82 /* VersusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77156821A7EE1500123D82 /* VersusTests.swift */; };
 		DB77157421A7EE1500123D82 /* VersusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB77157321A7EE1500123D82 /* VersusUITests.swift */; };
-		DBADD3A521AD94F700A7113D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,26 +61,26 @@
 		558DC9C221ACE73A00B474B1 /* TournamentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentViewController.swift; sourceTree = "<group>"; };
 		55BDB58421ACC3F9005E8BF7 /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
 		55BDB58621ACD343005E8BF7 /* players.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
-		55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PermanentMarker.ttf; path = "../../../../../../Downloads/permanent-marker/PermanentMarker.ttf"; sourceTree = "<group>"; };
 		5F0F8A0AE86E666C1B339E49 /* Pods-Versus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Versus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Versus/Pods-Versus.debug.xcconfig"; sourceTree = "<group>"; };
 		6BFB4C3B1BB545B5FE968D3D /* Pods-VersusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9E9674A8969F649F6383FB82 /* Pods-VersusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D2AA29B303664703E62CE8F4 /* Pods-VersusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VersusTests/Pods-VersusTests.release.xcconfig"; sourceTree = "<group>"; };
 		D76B3FD19B7FB3817E987232 /* Pods-VersusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VersusUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VersusUITests/Pods-VersusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB2DE2CC21AEDC4400266A8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DB2DE2D221AEE3A700266A8F /* PermanentMarker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PermanentMarker.ttf; sourceTree = "<group>"; };
+		DB2DE2D521AEE45200266A8F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB77155021A7EE1300123D82 /* Versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77155321A7EE1300123D82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB77155521A7EE1300123D82 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DB77155821A7EE1300123D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB77155A21A7EE1500123D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB77155D21A7EE1500123D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DB77155F21A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB77156421A7EE1500123D82 /* VersusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77156821A7EE1500123D82 /* VersusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusTests.swift; sourceTree = "<group>"; };
 		DB77156A21A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB77156F21A7EE1500123D82 /* VersusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB77157321A7EE1500123D82 /* VersusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersusUITests.swift; sourceTree = "<group>"; };
 		DB77157521A7EE1500123D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6C2E7019D08EAFA7092995C /* Pods_VersusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VersusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,7 +115,7 @@
 		55BE6E0721A8825E00F7D5C1 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				55BE6E0821A8826800F7D5C1 /* PermanentMarker.ttf */,
+				DB2DE2D221AEE3A700266A8F /* PermanentMarker.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -176,8 +177,8 @@
 				DB77155721A7EE1300123D82 /* Main.storyboard */,
 				DB77155A21A7EE1500123D82 /* Assets.xcassets */,
 				DB77155C21A7EE1500123D82 /* LaunchScreen.storyboard */,
-				DB77155F21A7EE1500123D82 /* Info.plist */,
-				DBADD3A421AD94F700A7113D /* GoogleService-Info.plist */,
+				DB2DE2D521AEE45200266A8F /* Info.plist */,
+				DB2DE2CC21AEDC4400266A8F /* GoogleService-Info.plist */,
 				55425D6A21A8257700D0D77B /* Player.swift */,
 				55425D6C21A827FF00D0D77B /* Tournament.swift */,
 				55425D6E21A829A300D0D77B /* Match.swift */,
@@ -315,11 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB77155E21A7EE1500123D82 /* LaunchScreen.storyboard in Resources */,
+				DB2DE2D321AEE3A700266A8F /* PermanentMarker.ttf in Resources */,
 				DB77155B21A7EE1500123D82 /* Assets.xcassets in Resources */,
 				DB77155921A7EE1300123D82 /* Main.storyboard in Resources */,
-				55BE6E0921A8826800F7D5C1 /* PermanentMarker.ttf in Resources */,
 				55BDB58721ACD343005E8BF7 /* players.json in Resources */,
-				DBADD3A521AD94F700A7113D /* GoogleService-Info.plist in Resources */,
+				DB2DE2CD21AEDC4400266A8F /* GoogleService-Info.plist in Resources */,
+				DB2DE2D621AEE45200266A8F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +375,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Versus/Pods-Versus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -381,6 +384,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
