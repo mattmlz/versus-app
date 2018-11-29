@@ -88,5 +88,5 @@ class TournamentViewController: UIViewController, UITableViewDelegate, UITableVi
         match.nextMatch?.addPlayer(match.playerTwo)
         match.played = true
     }
-
+    
 }

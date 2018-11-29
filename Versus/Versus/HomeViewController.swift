@@ -126,7 +126,6 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     }
     
     @IBAction func letsRumbleClick(_ sender: UIButton) {
-        // Check if fields are empty        
         for playerTextField in allPlayersTextField{
             if(playerTextField.text != ""){
                 thePlayers.append(Player(pseudo: playerTextField.text!))

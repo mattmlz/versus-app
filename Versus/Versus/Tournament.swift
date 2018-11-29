@@ -9,7 +9,6 @@
 import UIKit
 
 class Tournament : NSObject{
-    var currentRank : Int = 0
     var players : [Player] = []
     var matchs : [Match] = []
     var name : String = ""
@@ -19,7 +18,6 @@ class Tournament : NSObject{
         super.init()
         self.name = name
         self.players = players
-        self.currentRank = 1
         
         createMatchs(players.count, players)
     }
